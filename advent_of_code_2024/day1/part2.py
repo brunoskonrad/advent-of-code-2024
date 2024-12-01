@@ -1,5 +1,17 @@
 from advent_of_code_2024.inputs import load_input
 
+def day1_part2(input: str) -> int: 
+  (left, right) = parse_input(input)
+  occurrances = count_occurrances(right)
+  
+  total_distance = 0
+
+  for item in left:
+    total_distance += item * occurrances.get(str(item), 0)
+
+  return total_distance
+
+
 def parse_input(input: str) -> tuple[list[int], list[int]]:
   lines = input.split('\n')
 
@@ -13,6 +25,7 @@ def parse_input(input: str) -> tuple[list[int], list[int]]:
 
   return (left, right)
 
+
 def count_occurrances(array: list[int]) -> dict[int, int]:
   occurrances = {}
 
@@ -24,16 +37,6 @@ def count_occurrances(array: list[int]) -> dict[int, int]:
 
   return occurrances
 
-def day1_part2(input: str) -> int: 
-  (left, right) = parse_input(input)
-
-  occurrances = count_occurrances(right)
-  total_distance = 0
-
-  for item in left:
-    total_distance += item * occurrances.get(str(item), 0)
-
-  return total_distance
 
 if __name__ == "__main__":
   result = day1_part2(load_input(1))
