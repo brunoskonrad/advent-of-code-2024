@@ -1,4 +1,5 @@
 import pytest
+
 from advent_of_code_2024.day1 import part2
 
 
@@ -22,8 +23,9 @@ def test_parsing(fixture):
   )
 
 def test_occurrances():
-  l = [4, 3, 5, 3, 9, 3]
-  assert part2.count_occurrances(l) == {
+  fixture = [4, 3, 5, 3, 9, 3]
+
+  assert part2.count_occurrances(fixture) == {
     '3': 3,
     '4': 1,
     '5': 1,

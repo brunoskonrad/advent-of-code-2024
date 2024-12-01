@@ -1,4 +1,5 @@
 import pytest
+
 from advent_of_code_2024.day1 import part1
 
 

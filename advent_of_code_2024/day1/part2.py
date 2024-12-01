@@ -1,5 +1,6 @@
 from advent_of_code_2024.inputs import load_input
 
+
 def day1_part2(input: str) -> int: 
   (left, right) = parse_input(input)
   occurrances = count_occurrances(right)

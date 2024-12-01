@@ -8,8 +8,25 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.13"
 pytest = "^8.3.3"
+ruff = "^0.8.1"
 
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.ruff.lint]
+select = [
+  # pycodestyle
+  "E",
+  # Pyflakes
+  "F",
+  # pyupgrade
+  "UP",
+  # flake8-bugbear
+  "B",
+  # flake8-simplify
+  "SIM",
+  # isort
+  "I",
+]
