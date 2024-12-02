@@ -1,10 +1,5 @@
 from advent_of_code_2024.inputs import load_input
 
-# Lines per input
-reports = None
-
-# list of numbers per report
-levels = []
 
 def day2_part1(input: str) -> int:
   reports = parse_input(input)
