@@ -40,7 +40,7 @@ def test_is_unsafe_when_decreasing_by_more_than_three():
 def test_is_safe_when_removing_unsafe_level_with_problem_dampener():
   assert part2.is_safe([1, 3, 2, 4, 5]) == True
 
-def test_is_safe_when_neither_increasing_nor_decreasing_is_removed_with_problem_dampener():
+def test_is_safe_when_neither_increasing_nor_decreasing_is_removed_with_problem_dampener(): # noqa: E501
   assert part2.is_safe([8, 6, 4, 4, 1]) == True
 
 def test_edge_case_last_level_problem_dampener():
