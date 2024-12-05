@@ -8,4 +8,4 @@ lint:
 	poetry run ruff check --fix
 
 format:
-	poetry run ruff format advent_of_code_2024
+	poetry run ruff format .
