@@ -50,10 +50,10 @@ class PageOrderingComparator:
 
     def compare(self, x: int, y: int) -> int:
         if self.page_order_rules.has_page_sequences(x, y):
-            return 1
+            return -1
 
         if self.page_order_rules.has_page_sequences(y, x):
-            return -1
+            return 1
 
         return 0
 
@@ -71,9 +71,7 @@ class PagesToProduce:
         return True
 
     def sort(self, comparator: PageOrderingComparator):
-        self.pages = sorted(
-            self.pages, key=cmp_to_key(comparator.compare), reverse=True
-        )
+        self.pages = sorted(self.pages, key=cmp_to_key(comparator.compare))
 
     @property
     def middle(self) -> int:
