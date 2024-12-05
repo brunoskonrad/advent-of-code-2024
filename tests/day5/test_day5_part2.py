@@ -1,6 +1,6 @@
 import pytest
 
-from advent_of_code_2024.day5 import part1
+from advent_of_code_2024.day5 import part2
 
 
 @pytest.fixture
@@ -36,4 +36,4 @@ def fixture():
 
 
 def test_solution(fixture):
-    assert part1.solution(fixture) == 143
+    assert part2.solution(fixture) == 123
