@@ -95,7 +95,18 @@ files = [
     {file = "ruff-0.8.1.tar.gz", hash = "sha256:3583db9a6450364ed5ca3f3b4225958b24f78178908d5c4bc0f46251ccca898f"},
 ]
 
+[[package]]
+name = "typing-extensions"
+version = "4.12.2"
+description = "Backported and Experimental Type Hints for Python 3.8+"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "typing_extensions-4.12.2-py3-none-any.whl", hash = "sha256:04e5ca0351e0f3f85c6853954072df659d0d13fac324d0072316b67d7794700d"},
+    {file = "typing_extensions-4.12.2.tar.gz", hash = "sha256:1a7ead55c7e559dd4dee8856e3a88b41225abfe1ce8df57b7c13915fe121ffb8"},
+]
+
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.13"
-content-hash = "c07c9d4521120c0a21857c99eb7c366c11e9cb33b2f2aaf9135b0cba4d862156"
+content-hash = "afbca1c2cb176e76d24d409892e7af4e1ca684d80fb323531fafd863daf03214"
